@@ -1,0 +1,7 @@
+body{font-family:system-ui,Arial;margin:0;background:#071026;color:#fff}
+.wrap{max-width:420px;margin:18px auto;padding:12px}
+canvas{display:block;margin:8px auto;border-radius:8px;background:#0b1220;image-rendering:pixelated}
+.controls{display:flex;gap:8px;justify-content:center;margin-top:8px}
+.controls button{padding:8px 12px;border-radius:8px;border:none;background:#2a3340;color:#fff;font-weight:700}
+.score{margin-top:8px;text-align:center;font-weight:700}
+.back{display:inline-block;margin-top:12px;padding:8px 14px;border-radius:8px;background:#ffd36b;color:#002031;text-decoration:none}

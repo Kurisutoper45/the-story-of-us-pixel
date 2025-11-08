@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>The Story of Us — Chris & Ita (Pixel Edition)</title>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="page">
+    <header class="hero">
+      <img src="public/sky-bg.png" class="sky" alt="" aria-hidden="true">
+      <div class="title-wrap">
+        <h1>The Story of Us</h1>
+        <h2>Chris &amp; Ita</h2>
+      </div>
+      <img src="public/couple.gif" alt="pixel couple" class="couple" />
+    </header>
+
+    <section class="center">
+      <button id="musicBtn" class="music-btn">▶️ Tap to Play Music</button>
+      <p class="hint">Tekan tombol untuk mengaktifkan musik & animasi pixel.</p>
+    </section>
+
+    <section class="card story">
+      <h3>Our Story</h3>
+      <p id="storyShort">Kadang semesta punya cara yang aneh tapi indah buat mempertemukan dua orang. Nggak direncanain, nggak disengaja, cuma kebetulan yang ternyata berarti besar. <span id="readMore" class="read-more">Baca selengkapnya</span></p>
+      <p id="storyFull" class="hidden">Begitulah awal cerita kita — dua orang yang awalnya dikenalkan oleh teman, tanpa tahu kalau pertemuan sederhana itu bakal berubah jadi sesuatu yang istimewa. Awalnya cuma basa-basi, obrolan ringan, dan tawa kecil yang nggak disangka bisa tumbuh jadi rasa. Sampai akhirnya, <strong>23 Juli 2025</strong>, jadi hari yang kita simpan baik-baik. Hari di mana dua hati yang awalnya cuma dikenalkan memutuskan untuk jalan bareng — bukan cuma sekarang, tapi masa depan juga. Kita belajar saling paham, saling tumbuh, dan saling menjaga. Terima kasih sudah jadi bagian dari kisah kami.</p>
+    </section>
+
+    <section class="card gallery">
+      <h3>Gallery Kenangan</h3>
+      <div class="grid">
+        <img src="public/foto1.jpg" alt="foto1" class="thumb">
+        <img src="public/foto2.jpg" alt="foto2" class="thumb">
+        <div class="center-slot">💗 Our Memories</div>
+        <img src="public/foto3.jpg" alt="foto3" class="thumb">
+        <img src="public/foto4.jpg" alt="foto4" class="thumb">
+      </div>
+    </section>
+
+    <section class="card video">
+      <h3>Day 1 — Momen Kita</h3>
+      <video id="day1video" controls playsinline preload="metadata" poster="public/video-poster.jpg">
+        <source src="public/day1.mp4" type="video/mp4">
+        Browser kamu tidak mendukung video.
+      </video>
+      <p class="hint">Saat video diputar, musik background akan berhenti sementara agar suaranya jelas.</p>
+    </section>
+
+    <section class="card game">
+      <h3>Pixel Tetris — Quick Mode</h3>
+      <p class="hint">Main sebentar aja — pemanis.</p>
+      <a href="tetris.html" class="play-btn">▶️ Play Tetris</a>
+    </section>
+
+    <section class="card feedback">
+      <h3>Kritik, Saran & Doa</h3>
+      <form id="feedbackForm">
+        <input id="nameField" placeholder="Nama (opsional)">
+        <textarea id="msgField" placeholder="Tulis kritik, saran, atau doa..." required></textarea>
+        <div class="row"><button type="submit" class="send-btn">Kirim</button></div>
+        <div id="formStatus" class="form-status"></div>
+      </form>
+      <p class="muted">Pesan akan dikirim ke Google Sheets (endpoint harus kamu isi di app.js).</p>
+    </section>
+
+    <footer class="footer">© 2025 Chris & Ita — Pixel Edition</footer>
+  </main>
+
+  <audio id="siteAudio" src="public/music.mp3" preload="auto"></audio>
+
+  <script src="app.js"></script>
+</body>
+</html>
